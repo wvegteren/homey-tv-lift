@@ -1,0 +1,8 @@
+{
+  "pair": {
+    "default_name": "Limoss TV lift"
+  },
+  "errors": {
+    "command_failed": "Could not reach the TV lift: __reason__"
+  }
+}

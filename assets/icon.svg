@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" width="960" height="960">
+  <g fill="none" stroke="#000" stroke-width="40" stroke-linecap="round" stroke-linejoin="round">
+    <!-- TV, front view, slightly left of centre -->
+    <rect x="80" y="110" width="620" height="400" rx="36"/>
+    <!-- Lift column -->
+    <path d="M330 510 V660"/>
+    <path d="M450 510 V660"/>
+    <!-- Cabinet top -->
+    <path d="M40 660 H920"/>
+    <!-- Cabinet body with two doors -->
+    <path d="M80 660 V850 H880 V660"/>
+    <path d="M480 700 V810"/>
+    <path d="M430 740 V770"/>
+    <path d="M530 740 V770"/>
+    <!-- Up / down arrow next to the TV -->
+    <path d="M820 140 V480"/>
+    <path d="M760 200 L820 140 L880 200"/>
+    <path d="M760 420 L820 480 L880 420"/>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.egteren.tvlift",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Limoss TV Lift",
+    "nl": "Limoss TV-lift"
+  },
+  "description": {
+    "en": "Raise and lower your Limoss TV lift from Homey",
+    "nl": "Bedien je Limoss TV-lift vanuit Homey"
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [
+    "homey:wireless:ble"
+  ],
+  "brandColor": "#1E3A5F",
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Winfred van Egteren"
+  },
+  "source": "https://github.com/wvegteren/homey-app-tvlift",
+  "support": "mailto:homey@egteren.nl",
+  "bugs": {
+    "url": "https://github.com/wvegteren/homey-app-tvlift/issues"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "TV lift",
+        "nl": "TV-lift"
+      },
+      "class": "windowcoverings",
+      "capabilities": [
+        "windowcoverings_state"
+      ],
+      "capabilitiesOptions": {
+        "windowcoverings_state": {
+          "title": {
+            "en": "TV lift",
+            "nl": "TV-lift"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "ble"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "small": "/drivers/tvlift/assets/images/small.png",
+        "large": "/drivers/tvlift/assets/images/large.png",
+        "xlarge": "/drivers/tvlift/assets/images/xlarge.png"
+      },
+      "id": "tvlift"
+    }
+  ]
+}

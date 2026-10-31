@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" width="960" height="960">
+  <g fill="none" stroke="#000" stroke-width="50" stroke-linecap="round" stroke-linejoin="round">
+    <!-- TV, front view -->
+    <rect x="150" y="110" width="660" height="430" rx="36"/>
+    <!-- Lift column -->
+    <path d="M420 540 V700"/>
+    <path d="M540 540 V700"/>
+    <!-- Up / down chevrons in the screen -->
+    <path stroke-width="40" d="M400 280 L480 210 L560 280"/>
+    <path stroke-width="40" d="M400 370 L480 440 L560 370"/>
+    <!-- Cabinet body -->
+    <rect x="80" y="700" width="800" height="150" rx="36"/>
+  </g>
+</svg>
