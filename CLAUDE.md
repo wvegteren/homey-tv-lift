@@ -23,11 +23,10 @@ homey app run                      # needs a selected Homey (`homey select`)
 
 ## Vendor app reference
 
-Decompiled Android app: `/Users/wvegteren/sandboxes/limoss` (command table in `com/kuian/mainservice/CmdFormater.java`, UI behaviour in `com/limoss/Breagle/MainControlActivity2.java`).
+Inspected vendor Android app: command table in `com/kuian/mainservice/CmdFormater.java`, UI behaviour in `com/limoss/Breagle/MainControlActivity2.java`.
 The vendor app is hold-to-run: it repeats the motor command every 60 ms while a button is held and sends `0xFF` (stop) 5x on release.
 Other known commands: `0x10` ask position (reply via notification on FFE1: `0x10` + uint32 BE), `0x11` + uint32 go to position (memory recall), `0x66` motor off, `0x00/0x01/0x02` HW/SW version and motor/memory count.
 
 ## Known gaps
 
 - No position/state feedback yet; state is the last command sent. Position read/set (`0x10`/`0x11`) not implemented.
-- No app/driver PNG images yet (required for `--level publish`).
